@@ -5,10 +5,6 @@ html,body{
 	line-height:1.5;
 }
 
-html{
-	overflow-x:hidden;
-}
-
 h1{
 	font-size:36px;
 }
@@ -49,14 +45,14 @@ hr{
 .bodycontainer{
 	display:flex;
 	flex-flow:row wrap;
-	align-content:stretch;
+	align-items:stretch;
+	justify-content:center;
 }
 
 .profile{
-	flex-basis:30%;
 	color: #000;
 	background-color: #fff;
-
+	flex-basis:30%;
 }
 
 .box{
@@ -65,25 +61,23 @@ hr{
 }
 
 .skillcontainer{
-	order:2;
-	flex-basis:28.50%;
 	padding: 10px 10px;
 	color:#757575;
+	flex-basis:28.5%;
 }
 
 .expcontainer{
-	order:1;
-	flex-basis:64%;
+	display:flex;
+	flex-flow:column wrap;
 	padding: 10px 10px;
-	margin-left:10px;
+	margin-left:1%;
+	flex-basis:60%;
 }
 
 .educontainer{
-	order:3;
-	flex-basis:64%;
-	align-content:stretch;
 	padding: 10px 10px;
-	margin-left:10px;
+	margin-left:1%;
+	flex-basis:60%;
 }
 
 .footcontainer{
@@ -98,10 +92,6 @@ hr{
 	color:#757575;
 	display:flex;
 	flex-direction:column;
-}
-
-.imgcontainer{
-	position:relative;
 }
 
 .display-text{
@@ -175,28 +165,94 @@ hr{
 	padding:4px 8px;
 }
 
+@media (max-width:675px) and (min-width:661px){
 
-@media (max-width:720px){
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:31.5%;
+}
+}
+
+@media (max-width:700px) and (min-width:676px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:30.5%;
+}
+}
+
+@media (max-width:731px) and (min-width:700px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:29.50%;
+}
+}
+
+@media (max-width:761px) and (min-width:731px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:28.75%;
+}
+}
+
+@media (max-width:900px) and (min-width:761px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:27.5%;
+}
+}
+
+@media (max-width:1075px) and (min-width:901px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:28%;
+}
+}
+
+@media (max-width:1185px) and (min-width:1075px){
+
+.skillcontainer{
+	padding: 10px 10px;
+	color:#757575;
+	flex-basis:28.25%;
+}
+}
+
+@media (max-width:660px) and (min-width:480px){
 .bodycontainer{
 	display:flex;
 	flex-flow:column wrap;
 	align-content:stretch;
 }
 
+.profile{
+	order:1
+}
 
 .skillcontainer{
-	order:1;
+	order:2;
 }
 
 .expcontainer{
-	order:2;
+	order:3;
 	margin-left:0px;	
 }
 
 .educontainer{
-	order:3;
+	order:4;
 	margin-left:0px;	
 }
+
 .box{
 	margin-top:10px;
 }
@@ -206,40 +262,11 @@ hr{
 	top:-70px;
 	padding:0.01em 10px;	
 }
-}
 
-@media (max-width:600px){
-.bodycontainer{
-	display:flex;
-	flex-flow:column wrap;
-	align-content:stretch;
-}
-
-
-.skillcontainer{
-	order:1;
-}
-
-.expcontainer{
-	order:2;
-	margin-left:0px;	
-}
-
-.educontainer{
-	order:3;
-	margin-left:0px;	
-}
-.box{
-	margin-top:10px;
-}
-
-.display-text{
-	position:relative;
-	top:-70px;
-	padding:0.01em 10px;	
+.imgcontainer img{
+	height:580px;
 }
 }
-
 
 @media (max-width:480px){
 .bodycontainer{
@@ -248,18 +275,21 @@ hr{
 	align-content:stretch;
 }
 
+.profile{
+	order:1
+}
 
 .skillcontainer{
-	order:1;
+	order:2;
 }
 
 .expcontainer{
-	order:2;
+	order:3;
 	margin-left:0px;	
 }
 
 .educontainer{
-	order:3;
+	order:4;
 	margin-left:0px;	
 }
 .box{
